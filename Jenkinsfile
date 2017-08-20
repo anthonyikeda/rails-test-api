@@ -1,7 +1,7 @@
 pipeline {
   agent { label 'ruby' }
-  stage("setup") {
-    steps {
+  stages {
+    stage("setup") {
       step {
         sh "rbenv install"
       }

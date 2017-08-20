@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage("setup") {
       steps {
-        sh "source /home/jenkins/.bashrc"
-        sh "rbenv install"
+        sh "/home/jenkins/.rbenv/bin/rbenv install"
       }
     }
     stage("Load gems") {

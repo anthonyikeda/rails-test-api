@@ -1,0 +1,6 @@
+FROM rails-test-api:1.0.0
+MAINTAINER Anthony Ikeda <anthony.ikeda@gmail.com>
+
+COPY . /ruby-app
+
+CMD ["rails", "s", "-b", "0.0.0.0"]

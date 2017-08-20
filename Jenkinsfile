@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage("setup") {
       steps {
+        sh "source /home/jenkins/.bashrc"
         sh "rbenv install"
       }
     }

@@ -182,7 +182,7 @@ DEPENDENCIES
   activerecord-nulldb-adapter!
   byebug
   database_cleaner
-  factory_girl_rails (~> 4.0)
+  factory_girl_rails (~> 4.8)
   faker
   listen (~> 3.0.5)
   puma (~> 3.0)

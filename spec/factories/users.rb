@@ -2,6 +2,6 @@ FactoryGirl.define do
     factory :user do
         name { Faker::StarWars.character }
         email { Faker::Internet.email }
-        address { Faker::Address.street_address }
+        dob { Faker::Date.birthday(18, 65) }
     end
 end

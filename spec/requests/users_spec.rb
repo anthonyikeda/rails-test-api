@@ -47,7 +47,7 @@ RSpec.describe 'Users API', type: :request do
     end
 
     describe 'POST /users' do
-        let(:valid_attributes) { { name: 'Michael', email: 'michael@gmail.com', address: '700 Home St' } }
+        let(:valid_attributes) { { name: 'Michael', email: 'michael@gmail.com', dob: '20/01/1979' } }
 
         context 'when the request is valid' do
             before { post '/users', params: valid_attributes }
@@ -76,7 +76,7 @@ RSpec.describe 'Users API', type: :request do
     end
 
     describe 'PUT /users/:id' do
-        let(:valid_attributes) { { name: 'Michael', email: 'michael@gmail.com', adress: '700 Home St' } }
+        let(:valid_attributes) { { name: 'Michael', email: 'michael@gmail.com', dob: '20/01/1979' } }
 
         context 'when the record exists' do
             before { put "/users/#{user_id}", params: valid_attributes }

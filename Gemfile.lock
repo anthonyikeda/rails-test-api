@@ -122,7 +122,8 @@ GEM
     nokogiri (1.13.6)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    puma (3.10.0)
+    puma (5.6.4)
+      nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.0.3)
     rack-test (0.6.3)
@@ -187,7 +188,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.8)
   faker
   listen (~> 3.0.5)
-  puma (~> 3.0)
+  puma (~> 5.6)
   rails (~> 5.0.1)
   rspec-core!
   rspec-expectations!
